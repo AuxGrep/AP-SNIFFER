@@ -17,6 +17,10 @@ It perform the following functions:
 7. Pass malicious traffics on DNSMASQR and read /etc/hosts and poison victim's device with it.
 8. Hosting FAKE WIFI and forward network connection and allowing people to connect on it.
 
+# DEMO
+
+Visit for full demo https://youtu.be/BL-67y0XsTs
+
 ![alt text](https://cdn.discordapp.com/attachments/951192813477965856/1001560653225541672/3.png)
 
 
