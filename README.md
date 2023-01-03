@@ -12,3 +12,10 @@ ONLY for EDUCATIONAL purposes , use this for demonstration and presentation purp
  ``5. you can interact with wireshark``
  ``6. MITMF feature , u can perfom man in the middle attack to all connected clients``
   `` and much more... TRY IT .........``
+  
+  # RUN IT
+  Very easy ```sudo git clone https://github.com/AuxGrep/AP-SNIFFER ```
+  
+  Then ```sudo pip3 install -r requirements.txt``` dont worry, in order to make it happen just install those requirements.
+  
+  
