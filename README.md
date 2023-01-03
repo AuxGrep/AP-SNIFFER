@@ -1,5 +1,5 @@
 # AP-SNIFFER UPDATED 2023
-Just Build Fake AP , let People Connect then Hacker can sniff passwords , logs , perfoming DNS spoofing , Dns spoof onFLY and much more.
+Just Build Fake AP , let People Connect then Hacker can sniff passwords , logs , perfoming MITMF , Dns spoof onFLY and much more.
 
 # DISCLAIMER
 ONLY for EDUCATIONAL purposes , use this for demonstration and presentation purposes at school to understand network security and take precautions.
