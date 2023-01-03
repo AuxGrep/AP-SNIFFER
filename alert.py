@@ -14,7 +14,7 @@ colorcode = {
 }
 
 class disclaimer():
-    print('\n{3}Hey Friend !! before start using this program, take this on your Mind \
+    print('\n{3}Hey Friend !! before start using this program, Dont forget \
     \n{0}{3}Hacking{2}{3} with out authorization is illegal, Dont use this program to attack\
         \n{3}networks with out legal permissions, {1}{3}AuxGrep{2}{3} is not responsible with \
             \n{3}any {0}{3}malicious activities{2}'.format(colorcode['RED'], \
